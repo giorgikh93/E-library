@@ -1,0 +1,108 @@
+/* basic classes */
+.wrapper{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.column{
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.none{
+    display: none;
+}
+/* ========================= */
+.header{
+    background-color: rgba(28, 28, 41, 0.884);
+}
+
+.lib{
+    font-size: 25px;
+    padding-top: 20px;
+    color: #f2f2f2;
+
+}
+.book{
+    font-size: 20px;
+    padding: 20px 0;
+    color: #f2f2f2;
+
+}
+.input-search{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/* ==================================main */
+.booksList{
+    background-color: rgba(131, 131, 131, 0.692);
+}
+
+.title{
+    font-size: 20px;
+    padding: 20px;
+    justify-content: center;
+    color: #f2f2f2;
+}
+.bookListUl li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    color:white;
+
+}
+.delete{
+    padding: 10px;
+    background-color: #753a88 ;
+    color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.hide{
+    font-size: 20px;
+    padding: 10px;
+}
+.addInput{
+    padding: 5px 10px;
+}
+.submit{
+    cursor: pointer;
+    background-color: #753a88 ;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+#addBooks{
+    padding: 20px 0;
+}
+#addButton{
+    padding:7px 20px;
+    background-color: #753a88 ;
+    color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.footer{
+    padding-top: 50px;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+.wrap i {
+    color: #753a88;
+}

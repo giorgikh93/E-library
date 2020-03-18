@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>E-library</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css files/style.css">
+  <link rel="stylesheet" href="css files/reset.css">
+  <link rel="stylesheet" href="pdf.files">
+</head>
+
+<body>
+  <header>
+    <div class="wrapper flex column align-center header">
+      <h1 class="lib">E-Library</h1>
+      <h2 class="book">Books for Ninjas</h2>
+      <form id="searchForm" action=""> <input type="text" id="inputSearch" class="input-search"
+          placeholder="Search for books..."></form>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper booksList" id="book-list">
+      <div class="heading flex justify-center">
+        <h1 class="title">Books to Read</h1>
+      </div>
+      <ul class="bookListUl" id="bookListUl">
+        <li> 
+          <span class="wrap ">
+          <span>Al-Qaeda Radicalization </span>
+          <a href="pdf.files/Al_Qaeda_Online_Radicalization.pdf">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+        <li>
+        <span class="wrap ">
+          <span>Asymmetric Deterrance</span>
+          <a href="pdf.files/Asymmetric Deterrence.pdf">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+        <li>
+        <span class="wrap ">
+          <span>Covert Signaling</span> <a href="pdf.files/covert_SIGNALING_communication_ss_2017.pdf"><i
+              class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+        <li> 
+        <span class="wrap ">
+
+          <span>Europian Position about Targeted Killing</span>
+          <a href="pdf.files/Europian position about Targeted killing.pdf">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+
+          </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+        <li> 
+        <span class="wrap ">
+          <span>Online Recruit</span>
+          <a href="pdf.files/online recruit.pdf">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+        <li> 
+        <span class="wrap ">
+          <span>Preventive Killing - america and israel</span>
+          <a href="pdf.files/Preventive killing - america and israel.pdf">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+        <li>
+        <span class="wrap ">
+          <span>Preventive use of force</span>
+          <a href="pdf.files/Preventive use of force.pdf">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+        <li>
+        <span class="wrap ">
+          <span>Rational Deterrance Theory</span>
+          <a href="pdf.files/Rational Deterrence Theory and Comparative Case Studies.pdf">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+        <li>
+        <span class="wrap ">
+          <span>Recruit</span>
+          <a href="pdf.files/recruit.pdf">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+        </span>
+          <div class="delete" id="deletee">delete</div>
+        </li>
+      </ul>
+      <div class="footer flex column align-center">
+        <form action=""> <input type="checkbox" id="hide"><span class="hide">Hide all Books</span></form>
+
+        <form id="addBooks" action="upload.php" method="post" enctype="multipart/form-data">
+          
+          <input class="addInput" type="text">
+          <span id="addButton">Add</span> 
+          <input id="file" type="file" accept=".pdf" name="file">
+          <!-- <button type="submit" name="submit">Upload</button> -->
+          <input type="submit" class="submit" value='Upload File'>
+
+
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="javascript.js">
+  </script>
+
+</body>
+
+</html>
